@@ -4,7 +4,7 @@ import { usePriceCakeBusd } from 'state/hooks'
 const useGetDocumentTitlePrice = () => {
   const cakePriceUsd = usePriceCakeBusd()
   useEffect(() => {
-    document.title = `DropTop - $${Number(cakePriceUsd).toLocaleString(undefined, {
+    document.title = `VolumeUp - $${Number(cakePriceUsd).toLocaleString(undefined, {
       minimumFractionDigits: 3,
       maximumFractionDigits: 3,
     })}`
